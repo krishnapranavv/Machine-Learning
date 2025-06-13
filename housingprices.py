@@ -27,7 +27,7 @@ Y_pred = model.predict(X_test)
 
 import matplotlib.pyplot as plt
 plt.scatter(X,Y,color='red',label='actual data')
-plt.plot(X,model.predict(),color='blue',label='regression line')
+plt.plot(X,model.predict(X),color='blue',label='regression line')
 plt.xlabel('Year')
 plt.ylabel('Price')
 plt.title('Year vs Price with Regression Line')
