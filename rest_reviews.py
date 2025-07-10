@@ -1,7 +1,7 @@
 import mysql.connector as ms 
 import pandas as pd
 
-mydb = ms.connect(host='localhost',user='root',passwd='12345',database='Rest_Review')
+mydb = ms.connect(host='localhost',user='root',passwd='12345',database='project_db')
 print("Conntection esablished !! ")
 cursor=mydb.cursor()
 cursor.execute("SELECT review,sentiment FROM sentiment_analysis")

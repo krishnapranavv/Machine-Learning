@@ -1,7 +1,7 @@
 import mysql.connector as ms
 import pandas as pd
 
-mydb=ms.connect(host='localhost',user='root',passwd='12345',database='Prices')
+mydb=ms.connect(host='localhost',user='root',passwd='12345',database='project_db')
 print("Connection has been successfully established !")
 cursor=mydb.cursor()
 query="SELECT price,year FROM housing WHERE location = %s "
